@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-arduino-uno",
+      "id": "uno",
+      "top": -22.2,
+      "left": 87.8,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led-bar-graph",
+      "id": "bargraph1",
+      "top": 62.4,
+      "left": 369.6,
+      "attrs": { "color": "lime" }
+    }
+  ],
+  "connections": [
+    [ "bargraph1:C9", "bargraph1:C10", "green", [ "h0" ] ],
+    [ "bargraph1:A1", "uno:13", "green", [ "h0" ] ],
+    [ "bargraph1:A2", "uno:12", "green", [ "h0" ] ],
+    [ "bargraph1:A3", "uno:11", "green", [ "h0" ] ],
+    [ "bargraph1:A4", "uno:10", "green", [ "h0" ] ],
+    [ "bargraph1:A5", "uno:9", "green", [ "h0" ] ],
+    [ "bargraph1:A6", "uno:8", "green", [ "h0" ] ],
+    [ "bargraph1:A7", "uno:7", "green", [ "h-48", "v9.59" ] ],
+    [ "bargraph1:A8", "uno:6", "green", [ "h-38.4", "v-0.01" ] ],
+    [ "bargraph1:A9", "uno:5", "green", [ "h-38.4", "v-0.01" ] ],
+    [ "bargraph1:A10", "uno:4", "green", [ "h0" ] ],
+    [ "bargraph1:C9", "bargraph1:C8", "green", [ "h0" ] ],
+    [ "bargraph1:C8", "bargraph1:C7", "green", [ "h0" ] ],
+    [ "bargraph1:C7", "bargraph1:C6", "green", [ "h0" ] ],
+    [ "bargraph1:C6", "bargraph1:C5", "green", [ "h0" ] ],
+    [ "bargraph1:C5", "bargraph1:C4", "green", [ "h0" ] ],
+    [ "bargraph1:C4", "bargraph1:C3", "green", [ "h0" ] ],
+    [ "bargraph1:C3", "bargraph1:C2", "green", [ "h0" ] ],
+    [ "bargraph1:C2", "bargraph1:C1", "green", [ "h0" ] ],
+    [ "bargraph1:C1", "uno:GND.1", "green", [ "v-9.6", "h-86.18" ] ]
+  ],
+  "dependencies": {}
+}
