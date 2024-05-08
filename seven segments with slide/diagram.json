@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 48.6, "left": -39, "attrs": {} },
+    {
+      "type": "wokwi-7segment",
+      "id": "sevseg1",
+      "top": -52.62,
+      "left": 72.28,
+      "attrs": { "common": "cathode" }
+    },
+    {
+      "type": "wokwi-slide-potentiometer",
+      "id": "pot1",
+      "top": 139.6,
+      "left": 215.2,
+      "rotate": 270,
+      "attrs": { "travelLength": "30" }
+    }
+  ],
+  "connections": [
+    [ "sevseg1:A", "uno:2", "green", [ "v-18.36", "h86.4" ] ],
+    [ "sevseg1:B", "uno:3", "green", [ "v-8.76", "h67.2" ] ],
+    [ "sevseg1:C", "uno:4", "green", [ "v0", "h67.2" ] ],
+    [ "sevseg1:D", "uno:5", "green", [ "v19.2", "h86.4" ] ],
+    [ "sevseg1:E", "uno:6", "green", [ "v28.8", "h86.4" ] ],
+    [ "sevseg1:G", "uno:7", "green", [ "v-8.76", "h-28.8", "v96", "h96" ] ],
+    [ "sevseg1:F", "uno:8", "green", [ "v-18.36", "h-48", "v115.2", "h96" ] ],
+    [ "sevseg1:DP", "uno:9", "green", [ "v0" ] ],
+    [ "sevseg1:COM.1", "uno:GND.1", "green", [ "h0" ] ],
+    [ "pot1:GND", "uno:GND.3", "black", [ "v-5.2", "h-48", "v211.2", "h-115.2" ] ],
+    [ "pot1:VCC", "uno:VIN", "red", [ "h-163.2", "v-57.5" ] ],
+    [ "pot1:SIG", "uno:A0", "green", [ "h-183.2", "v-57.5" ] ]
+  ],
+  "dependencies": {}
+}
